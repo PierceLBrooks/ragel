@@ -15,6 +15,7 @@ endforeach()
 
 ## Generate headers
 configure_file(version.h.cmake.in version.h @ONLY)
+configure_file(version.h.cmake.in ragel/version.h @ONLY)
 configure_file(ragel-config.cmake.in
 	"${PROJECT_BINARY_DIR}/${_PACKAGE_NAME}-config.cmake" @ONLY)
 
